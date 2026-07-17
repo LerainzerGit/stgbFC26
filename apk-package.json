@@ -1,0 +1,14 @@
+{
+  "name": "stgb-fc-26",
+  "version": "1.0.0",
+  "description": "STGB FC 26 mobile build",
+  "scripts": {
+    "sync": "npx cap sync android",
+    "build-apk": "cd android && ./gradlew assembleDebug"
+  },
+  "devDependencies": {
+    "@capacitor/core": "^6.0.0",
+    "@capacitor/cli": "^6.0.0",
+    "@capacitor/android": "^6.0.0"
+  }
+}
