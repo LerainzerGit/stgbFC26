@@ -1,0 +1,21 @@
+{
+  "name": "stgb-fc-26",
+  "version": "1.0.0",
+  "description": "STGB FC 26 - football game by Chart Studios Ltd / STGB",
+  "main": "main.js",
+  "author": "Chart Studios Ltd / STGB",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable --x64"
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.chartstudios.stgbfc26",
+    "productName": "STGB FC 26",
+    "files": ["main.js", "app/**/*"],
+    "win": { "target": "portable" }
+  }
+}
