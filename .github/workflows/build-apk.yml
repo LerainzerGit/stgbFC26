@@ -22,9 +22,12 @@ jobs:
 
       - run: npm install
 
-      - run: npx cap add android
+      - name: Verify capacitor CLI installed
+        run: npm ls @capacitor/cli
 
-      - run: npx cap sync android
+      - run: npx --yes --package=@capacitor/cli cap add android
+
+      - run: npx --yes --package=@capacitor/cli cap sync android
 
       - run: cd android && chmod +x gradlew && ./gradlew assembleDebug
 
